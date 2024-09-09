@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
      // aquí se agregan los nuevos tipos
 const parttimeJobs = document.querySelectorAll('.job.parttime').length;
 document.getElementById('parttime-count').textContent = `(${parttimeJobs})`;
+const albañilJobs = document.querySelectorAll('.job.albañil').length;
+document.getElementById('albañil-count').textContent = `(${albañilJobs})`;
 // fin de los nuevos tipos
   }
   
