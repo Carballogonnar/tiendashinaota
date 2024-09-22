@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const allJobs = document.querySelectorAll('.job').length;
     document.getElementById('all-count').textContent = `(${allJobs})`;
      // aquí se agregan los nuevos tipos
+const Citas_a_ciegasJobs = document.querySelectorAll('.job.Citas_a_ciegas').length;
+document.getElementById('Citas_a_ciegas-count').textContent = `(${Citas_a_ciegasJobs})`;
 // fin de los nuevos tipos
   }
   
