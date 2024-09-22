@@ -6,14 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const allJobs = document.querySelectorAll('.job').length;
     document.getElementById('all-count').textContent = `(${allJobs})`;
      // aquí se agregan los nuevos tipos
-const albañilJobs = document.querySelectorAll('.job.albañil').length;
-document.getElementById('albañil-count').textContent = `(${albañilJobs})`;
-const Trabajo_en_oficinaJobs = document.querySelectorAll('.job.Trabajo_en_oficina').length;
-document.getElementById('Trabajo_en_oficina-count').textContent = `(${Trabajo_en_oficinaJobs})`;
-const GastronomíaJobs = document.querySelectorAll('.job.Gastronomía').length;
-document.getElementById('Gastronomía-count').textContent = `(${GastronomíaJobs})`;
-const ChoferJobs = document.querySelectorAll('.job.Chofer').length;
-document.getElementById('Chofer-count').textContent = `(${ChoferJobs})`;
+const TerrenoJobs = document.querySelectorAll('.job.Terreno').length;
+document.getElementById('Terreno-count').textContent = `(${TerrenoJobs})`;
+const AlquilerJobs = document.querySelectorAll('.job.Alquiler').length;
+document.getElementById('Alquiler-count').textContent = `(${AlquilerJobs})`;
+const CuidarJobs = document.querySelectorAll('.job.Cuidar').length;
+document.getElementById('Cuidar-count').textContent = `(${CuidarJobs})`;
 // fin de los nuevos tipos
   }
   
