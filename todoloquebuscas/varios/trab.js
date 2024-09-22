@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const allJobs = document.querySelectorAll('.job').length;
     document.getElementById('all-count').textContent = `(${allJobs})`;
      // aquí se agregan los nuevos tipos
- 
-    // fin de los nuevos tipos
+// fin de los nuevos tipos
   }
   
   function filterJobs(type) {
