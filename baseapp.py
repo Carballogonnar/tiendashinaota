@@ -170,9 +170,11 @@ class BaseApp:
                 job_types[job_type] += 1
             else:
                 job_types[job_type] = 1
+        # Dependiendo de la sección activa, seleccionar las rutas HTML y JavaScript
+        HTML_FILE_PATH = self.html_path
+        JS_FILE_PATH = self.js_path
 
         # Sobrescribir la sección de anuncios en el archivo HTML
-        HTML_FILE_PATH = "todoloquebuscas/empleos/trab.html"
         with open(HTML_FILE_PATH, "r+") as file:
             content = file.read()
 
@@ -201,7 +203,6 @@ class BaseApp:
             file.truncate()
 
         # Actualizar el JavaScript
-        JS_FILE_PATH = "todoloquebuscas/empleos/trab.js"
         with open(JS_FILE_PATH, "r+") as file:
             content = file.read()
 
@@ -252,12 +253,12 @@ class JobApp(BaseApp):
 
 class InmueblesApp(BaseApp):
     def __init__(self, window):
-        super().__init__(window, 'inmuebles.db', 'todoloquebuscas/inmuebles/inmuebles.html', 'todoloquebuscas/js/inmuebles-types.js')
+        super().__init__(window, 'inmuebles.db', 'todoloquebuscas/inmuebles/inmuebles.html', 'todoloquebuscas/inmuebles/trab.js')
 
 class MotoresApp(BaseApp):
     def __init__(self, window):
-        super().__init__(window, 'motores.db', 'todoloquebuscas/motores/motores.html', 'todoloquebuscas/js/motores-types.js')
+        super().__init__(window, 'motores.db', 'todoloquebuscas/motores/motors.html', 'todoloquebuscas/motores/trab.js')
 
 class VariosApp(BaseApp):
     def __init__(self, window):
-        super().__init__(window, 'varios.db', 'todoloquebuscas/varios/varios.html', 'todoloquebuscas/js/varios-types.js')
+        super().__init__(window, 'varios.db', 'todoloquebuscas/varios/varios.html', 'todoloquebuscas/varios/trab.js')
