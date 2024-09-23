@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
      // aquí se agregan los nuevos tipos
 const Citas_a_ciegasJobs = document.querySelectorAll('.job.Citas_a_ciegas').length;
 document.getElementById('Citas_a_ciegas-count').textContent = `(${Citas_a_ciegasJobs})`;
+const PréstamosJobs = document.querySelectorAll('.job.Préstamos').length;
+document.getElementById('Préstamos-count').textContent = `(${PréstamosJobs})`;
+const Compra_de_cobreJobs = document.querySelectorAll('.job.Compra_de_cobre').length;
+document.getElementById('Compra_de_cobre-count').textContent = `(${Compra_de_cobreJobs})`;
+const Servicios_de_compañiaJobs = document.querySelectorAll('.job.Servicios_de_compañia').length;
+document.getElementById('Servicios_de_compañia-count').textContent = `(${Servicios_de_compañiaJobs})`;
 // fin de los nuevos tipos
   }
   
